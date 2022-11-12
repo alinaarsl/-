@@ -1,0 +1,6 @@
+N = int(input())
+mas = list(map(int, input().split()))
+index = int(input())
+element = int(input())
+mas.insert(index, element)
+print(mas)
