@@ -1,16 +1,20 @@
-queue = []
-def size():
-    size = len(queue)
-    return size
-def push(queue,n):
-    queue.append(n)
-    print('ok')
-def pop(queue,n):
-    return queue.pop(0)
-def front(queue):
-    return queue[0]
-def clear():
-    queue.clear()
-    print('ok')
-def exit():
-    print('bye')
+queue =class Queue:
+    def __init__(self):
+        self.queue = []
+    
+    def size(self):
+        size = len(self.queue)
+        return size
+    def push(self,n):
+        self.queue.append(n)
+        print('ok')
+   
+    def pop(self,n):
+        return self.queue.pop()
+    def front(self):
+        return self.queue[0]
+    def clear(self):
+        self.queue.clear()
+        print('ok')
+    def exit(self):
+        print('bye')
